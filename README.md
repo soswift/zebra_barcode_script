@@ -11,6 +11,10 @@ Notes:
 - Used an R-script to sub out the relevant barcode values for new ones
 - Appended each new barcode to a long ZPL file (could be more efficient)
 
+To print on a linux system, send the .zpl output file directly to the printer using the terminal:
+   
+   lpr -P Zebra_Technologies_ZTC_GK420t -o raw output.zpl
+
 Things to do:
 - Save template on printer and use ZPL fields to fill out information
 - Read in CSV files with more complex label information (e.g. multiple text fields)
